@@ -56,7 +56,7 @@ function summarizeText(inputText, numSentences = 5) {
 }
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/your_database_name', {
+mongoose.connect('mongodb://mymongodbac:AFExw5Veb5znSY8InRmXN5nhe1kQKWubbf1bVrBWYPa6F50kH8EROgdABn7O44fP3wosnXFDo9ylACDbdagGbA==@mymongodbac.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@mymongodbac@', {
   
 });
 
