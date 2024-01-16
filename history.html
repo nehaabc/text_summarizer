@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #181818;
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f9c7c7;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    button {
+color: rgb(242, 239, 239);
+height: 100%;
+border-radius: 8px;
+font-size: 20px;
+background-color: rgb(51, 22, 22);
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+box-shadow: rgba(45, 22, 22, 0.2) 0px 2px 3px, rgba(2, 4, 3, 0.2) 0px 1.5px 2px,
+rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+  </style>
+</head>
+<body>
+<img src="./uploads/1704974636407.jpg" alt="">
+  
+    <!-- Fetch and display image data from MongoDB -->
+    <script>
+         async function fetchAndDisplayOldImages() {
+        try {
+            const response = await fetch('/fetchImageData');
+            const images = await response.json();
+
+            const imageContainer = document.getElementById('img');
+            images.forEach(image => {
+                console.log("Image Path:", image.path);  // Debugging line
+
+                const imgElement = new Image();
+                imgElement.src = '/' + image.path.replace(/\\/g, '/');
+                imgElement.alt = 'Img';
+
+                imageContainer.appendChild(imgElement);
+            });
+        } catch (error) {
+            console.error('Error fetching old images:', error);
+        }
+    }
+    window.onload = fetchAndDisplayOldImages;
+      fetch('/fetchImageData') // Add a new route in your Express app to fetch image data
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(image => {
+            document.write(`
+            <table style="border-collapse: collapse;width: 100%;margin-top: 20px;">
+            <h2>Image Data</h2>
+               
+             <tr>
+              <th styly="background-color: #f2f2f2;">Image</th>
+              <th styly="background-color: #f2f2f2;">Image Text</th>
+              <th styly="background-color: #f2f2f2;">Image Summary</th>
+            </tr>
+              <tr>
+                <td style="padding:8px;border:1px solid red;" id="img"></td>
+                <td style="padding:8px;border:1px solid red;">${image.text}</td>
+                <td style="padding:8px;border:1px solid red;">${image.summary}</td>
+              </tr>
+              </table>
+            `);
+            console.log(image.path);
+
+          });
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
+  </table>
+
+  <h2>PDF Data</h2>
+  
+    <!-- Fetch and display PDF data from MongoDB -->
+
+    <script>
+        
+      fetch('/fetchPdfData') // Add a new route in your Express app to fetch PDF data
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(pdf => {
+            document.write(`
+            <table style="border-collapse: collapse;width: 100%;margin-top: 20px;">
+            <h2>PDF Data</h2>
+                
+                <tr>
+              <th styly="background-color: #f2f2f2;">PDF img</th>
+              <th styly="background-color: #f2f2f2;">PDF Text</th>
+              <th styly="background-color: #f2f2f2;">PDF Summary</th>
+            </tr>
+              <tr>
+              <td style="padding:8px;border:1px solid red" ><img src="./uploads/download.jpeg" alt="Pdf"></td>
+                <td style="padding:8px;border:1px solid red">${pdf.text}</td>
+                <td style="padding:8px;border:1px solid red">${pdf.summary}</td>
+              </tr>
+              </table>
+              <button style="margin:15px;padding:20px;background:white;" onclick="getHomePageURL()">GO Back</button>
+
+            `);
+          });
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
+
+  </table>
+  
+  <script>
+    function getHomePageURL() {
+  var currentURL = window.location.href;
+  var homePageURL = currentURL.split("/")[0] + "//" + currentURL.split("/")[2];
+  window.location.href = homePageURL ;
+}
+
+  </script>
+</body>
+</html>
