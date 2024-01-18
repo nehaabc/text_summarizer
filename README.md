@@ -27,8 +27,7 @@ Azure AI Service <br>
     <li>Documentation and Support</li>
 </ul>
 <b>Future Enhancements :</b><br>
-<p align="justify">The Multilingual Content Hub isn't only a standalone venture but a foundation for ability future enhancements. Integrations with additional Azure offerings, which includes Azure Storage for coping with multimedia content and Azure Key Vault for more suitable security, could be explored. Moreover, monitoring and analytics via Azure Monitor and Azure Application Insights pave the manner for continuous improvement and optimization.</p>
-<h2>Core Azure Services</h2>
+<p align="justify">In future iterations, Textminds aims to elevate its capabilities by incorporating multilingual support, advanced summarization techniques, and collaborative editing features. The roadmap includes seamless integration with external APIs for expanded functionalities, real-time collaboration within the chatbot, and the introduction of customizable workflows to empower users with personalized text processing sequences.The roadmap includes seamless integration with external APIs for expanded functionalities, real-time collaboration within the chatbot, and the introduction of customizable workflows to empower users with personalized text processing sequences. </h2>
 <b>Azure App Service :</b><br><p align="justify"><br>The project utilizes Azure App Service to host the web application, ensuring scalability, reliability, and ease of deployment. This service enables seamless integration with other Azure components and provides a secure environment for the application.</p>
 
 <b>Azure MySQL Dtatabase :</b><br><p align="justify">To store and manage recent search history, the project employs Azure SQL Database. This relational database service ensures data consistency, integrity, and enables efficient querying, making it ideal for tracking and displaying user interactions.</p>
