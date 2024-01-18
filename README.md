@@ -19,11 +19,12 @@ Azure AI Service <br>
 <p align="justify">. The core features include text extraction, conversion, and summarization, along with a chatbot for an interactive user experience.</p><br>
 <b>Key Features :</b>
 <ul>
-    <li>Seamless Language Translation</li>
+    <li>Summarization Functionality:</li>
     <li>User-Friendly Interface</li>
-    <li>History Tracking and Recent Searches</li>
-    <li>Azure App Service Hosting</li>
-    <li>Azure SQL Database for Efficient Data Management</li>
+    <li>Search History and Results Management</li>
+    <li>Conversion Capabilities</li>
+    <li>Chatbot Interaction</li>
+    <li>Documentation and Support</li>
 </ul>
 <b>Future Enhancements :</b><br>
 <p align="justify">The Multilingual Content Hub isn't only a standalone venture but a foundation for ability future enhancements. Integrations with additional Azure offerings, which includes Azure Storage for coping with multimedia content and Azure Key Vault for more suitable security, could be explored. Moreover, monitoring and analytics via Azure Monitor and Azure Application Insights pave the manner for continuous improvement and optimization.</p>
