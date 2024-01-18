@@ -15,8 +15,7 @@ Azure AI Service <br>
 1. Azure AI Translator Service
 </h3>
 <h2>Problem Statement</h2>
-<p align="justify">In our increasingly more interconnected global, the need for seamless verbal exchange throughout language boundaries is extra important than ever. The assignment lies in offering a consumer-friendly platform wherein people can without difficulty translate content while maintaining a report in their interactions. The possibility is to create an green, scalable solution that addresses language translation desires and complements consumer revel in with the aid of incorporating recent search records.</p>
-<h2>Project Description</h2>
+<p align="justify">The vast amount of textual information available on the internet often overwhelms users, making it challenging to extract relevant information efficiently. Additionally, users may need summarized content for a quick understanding.</h2>
 <p align="justify">The "Multilingual Content Hub - VOX" is a web application designed to facilitate language translation and maintain a history of person interactions. Users can enter text, and the gadget leverages Azure AI Translator service to provide accurate and contextually relevant translations. The software additionally consists of a characteristic to show recent searches, allowing users to revisit and reuse previous translations easily.</p><br>
 <b>Key Features :</b>
 <ul>
@@ -61,9 +60,9 @@ Azure AI Service <br>
 <img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/flask-ai.jpg" alt="resource-display"></img>
 
 <h2>Final Project Statement</h2>
+<p align="justify">Textminds is a Future Ready Talent Internship project that showcases the integration of Node.js, HTML, and CSS with Azure Cloud services. By utilizing Azure App Service, Azure Cosmos DB for MongoDB, and Azure AI Services, the project delivers an end-to-end solution for text extraction, conversion, summarization, and interactive user engagement through a chatbot. 
+</p>
 <p align="justify">
-The Multilingual Content Hub redefines language connectivity by using seamlessly merging generation and linguistic finesse. This task, empowered by means of Azure's sturdy infrastructure, not most effective tackles language barriers however envisions a destiny wherein verbal exchange transcends borders.</p>
-<p align="justify">
-<b>As we finish, the Multilingual Content Hub isn't always just an utility; it's an ongoing exploration of endless communication possibilities. In this era of worldwide connectivity, this undertaking signifies a pivotal step toward a greater accessible and interconnected international.</b>
+<b>This innovative approach addresses the challenges associated with handling vast amounts of textual information, providing users with a powerful and user-friendly platform for efficient text processing.</b>
 </p> <br>
 </h2><b><a href="https://aiwebappazure.azurewebsites.net/">Multilingual Content Hub - VOX Translation Web App using Azure AI Translation Service</b></a>
