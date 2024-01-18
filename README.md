@@ -33,7 +33,7 @@ Azure AI Service <br>
 <h2>Azure AI Service</h2>
 <b>Azure AI Translator Service :</b><br><br><p align="justify">The core of the translation functionality is powered by Azure AI Translator service. This service employs advanced natural language processing algorithms to provide accurate and contextually relevant translations across a wide array of languages.</p>
 <h2>Other Azure Technologies / Services</h2>
-<p align="justify">In the Multilingual Content Hub, Azure Monitor and Azure Application Insights collaboratively form a dynamic duo, meticulously overseeing application health and person stories.</p>
+<p align="justify">In addition to the core and AI services, the project may leverage other Azure technologies for optimization and additional functionalities. For instance, Azure Cognitive Services can enhance the understanding of natural language, while Azure DevOps may be employed for continuous integration and deployment, ensuring a smooth development workflow.</p>
 
 <b>Azure Monitor :</b><p align="justify"><b>Real-time Performance Metrics :</b> Monitors vital overall performance indicators, ensuring the application runs seamlessly.<br>
 <b>Proactive Alerts :</b> Issues immediately alerts on deviations from set overall performance thresholds, enabling fast responses to capability disruptions.</p>
