@@ -15,8 +15,8 @@ Azure AI Service <br>
 1. Azure AI Translator Service
 </h3>
 <h2>Problem Statement</h2>
-<p align="justify">The vast amount of textual information available on the internet often overwhelms users, making it challenging to extract relevant information efficiently. Additionally, users may need summarized content for a quick understanding.</h2>
-<p align="justify">The "Multilingual Content Hub - VOX" is a web application designed to facilitate language translation and maintain a history of person interactions. Users can enter text, and the gadget leverages Azure AI Translator service to provide accurate and contextually relevant translations. The software additionally consists of a characteristic to show recent searches, allowing users to revisit and reuse previous translations easily.</p><br>
+<p align="justify">The Textminds project is a comprehensive solution for text extraction, conversion, and summarization implemented using Node.js, HTML, and CSS. Leveraging the power of Azure Cloud, the project integrates various Azure services to enhance functionality and reliability. </h2>
+<p align="justify">. The core features include text extraction, conversion, and summarization, along with a chatbot for an interactive user experience.</p><br>
 <b>Key Features :</b>
 <ul>
     <li>Seamless Language Translation</li>
