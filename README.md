@@ -14,7 +14,7 @@ Core Azure Services : <br>
 Azure AI Service <br>
 1.Azure AI Document Summarization: <br>
 2.Azure AI Language and Chat Bot Service:     
-</h3>
+</h3><br>
   
 <h2>Problem Statement</h2>
 <p align="justify">The Textminds project is a comprehensive solution for text extraction, conversion, and summarization implemented using Node.js, HTML, and CSS. Leveraging the power of Azure Cloud, the project integrates various Azure services to enhance functionality and reliability. </h2>
