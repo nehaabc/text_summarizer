@@ -34,6 +34,9 @@ Azure AI Service <br>
 <b>Azure MySQL Dtatabase :</b><br><p align="justify">To store and manage recent search history, the project employs Azure SQL Database. This relational database service ensures data consistency, integrity, and enables efficient querying, making it ideal for tracking and displaying user interactions.</p>
 <h2>Azure AI Service</h2>
 <b>1.Azure AI Document Summarization :</b><br><br><p align="justify">Integrated for advanced text summarization, enhancing the project's ability to generate concise and meaningful summaries.</p>
+<b>2.Azure AI Language and Chat Bot Service: </b><br>
+<p align="justify"> Implemented to develop an interactive chatbot, enabling users to interact with the system using natural language and enhancing the overall user experience.</p>
+
 <h2>Other Azure Technologies / Services</h2>
 <p align="justify">In addition to the core and AI services, the project may leverage other Azure technologies for optimization and additional functionalities. For instance, Azure Cognitive Services can enhance the understanding of natural language, while Azure DevOps may be employed for continuous integration and deployment, ensuring a smooth development workflow.</p>
 
