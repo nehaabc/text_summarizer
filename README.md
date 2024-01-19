@@ -29,7 +29,7 @@ Azure AI Service <br>
     <li>Documentation and Support</li>
 </ul>
 <b>Future Enhancements :</b><br>
-<p align="justify">In addition to the core and AI services, the project may leverage other Azure technologies for optimization and additional functionalities. For instance, Azure Cognitive Services can enhance the understanding of natural language, while Azure DevOps may be employed for continuous integration and deployment, ensuring a smooth development workflow.</p>
+<p align="justify">In addition to the core and AI services, the project may leverage other Azure technologies for optimization and additional functionalities. For instance, Azure Cognitive Services can enhance the understanding of natural language, while Azure DevOps may be employed for continuous integration and deployment, ensuring a smooth development workflow. Privacy features will be enhanced to comply with regulations, and an offline mode will be developed for scenarios with limited connectivity</p>
 
 <b>Azure MySQL Dtatabase :</b><br><p align="justify">To store and manage recent search history, the project employs Azure SQL Database. This relational database service ensures data consistency, integrity, and enables efficient querying, making it ideal for tracking and displaying user interactions.</p>
 <h2>Azure AI Service</h2>
