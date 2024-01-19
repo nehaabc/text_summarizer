@@ -12,8 +12,10 @@ Core Azure Services : <br>
 1. Azure App Service <br>
 2. Azure SQL Database <br> <br>
 Azure AI Service <br>
-1. Azure AI Translator Service
+1.Azure AI Document Summarization: <br>
+2.Azure AI Language and Chat Bot Service:     
 </h3>
+  
 <h2>Problem Statement</h2>
 <p align="justify">The Textminds project is a comprehensive solution for text extraction, conversion, and summarization implemented using Node.js, HTML, and CSS. Leveraging the power of Azure Cloud, the project integrates various Azure services to enhance functionality and reliability. </h2>
 <p align="justify">. The core features include text extraction, conversion, and summarization, along with a chatbot for an interactive user experience.</p><br>
@@ -31,7 +33,7 @@ Azure AI Service <br>
 
 <b>Azure MySQL Dtatabase :</b><br><p align="justify">To store and manage recent search history, the project employs Azure SQL Database. This relational database service ensures data consistency, integrity, and enables efficient querying, making it ideal for tracking and displaying user interactions.</p>
 <h2>Azure AI Service</h2>
-<b>Azure AI Translator Service :</b><br><br><p align="justify">The core of the translation functionality is powered by Azure AI Translator service. This service employs advanced natural language processing algorithms to provide accurate and contextually relevant translations across a wide array of languages.</p>
+<b>1.Azure AI Document Summarization :</b><br><br><p align="justify">Integrated for advanced text summarization, enhancing the project's ability to generate concise and meaningful summaries.</p>
 <h2>Other Azure Technologies / Services</h2>
 <p align="justify">In addition to the core and AI services, the project may leverage other Azure technologies for optimization and additional functionalities. For instance, Azure Cognitive Services can enhance the understanding of natural language, while Azure DevOps may be employed for continuous integration and deployment, ensuring a smooth development workflow.</p>
 
@@ -49,7 +51,9 @@ Azure AI Service <br>
 <b>Description :</b><p align="justify"> The project leverages Azure Database for MySQL to efficiently manage and store user interaction history. This relational database service ensures data consistency and supports quick retrieval of information.</p>
 <img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-db.png" alt="azure-mysql-db-service"></img><br>
 <h3>Azure AI Translator Service</h3>
-<b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p>
+<b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p><br>
+<h3>Azure AI Language and Chat Bot Service: </h3>
+<p>: Implemented to develop an interactive chatbot, enabling users to interact with the system using natural language and enhancing the overall user experience.</p>
 <img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-ai.png" alt="azure-translator-ai-service"></img><br>
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
