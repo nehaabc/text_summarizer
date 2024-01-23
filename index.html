@@ -290,7 +290,7 @@ transition: transform 0.3s ease-in-out;
   formData.append('summaryResultimg', summaryResultimg);
   formData.append('fileInput', file);
 
-  fetch('http://localhost:3000/summarizeImage', {
+  fetch('/summarizeImage', {
     method: 'POST',
     body: formData,
   })
@@ -317,7 +317,7 @@ function summarizePdf() {
   formData.append('text', text);
   formData.append('summaryResult', summaryResult);
 
-  fetch('http://localhost:3000/summarizePdf', {
+  fetch('/summarizePdf', {
     method: 'POST',
     body: formData,
   })
@@ -341,7 +341,7 @@ function summarizePdf() {
   function summarizeText() {
       const text = document.getElementById('text').value;
      
-        fetch('http://localhost:3000/summarize', {
+        fetch('/summarize', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -366,7 +366,7 @@ function summarizePdf() {
     function summarizeTextImg() {
       const text = document.getElementById('textimg').value;
      
-        fetch('http://localhost:3000/summarize', {
+        fetch('/summarize', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
