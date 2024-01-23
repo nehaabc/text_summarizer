@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.4/dist/tesseract.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.js"></script>
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  
+  /* Change this to your desired color */
+  text-align: center;
+  margin: 20px;
+  background: rgb(253,243,247);
+background: radial-gradient(circle, rgba(253,243,247,1) 0%, rgb(154, 235, 245) 100%);
+
+
+  
+    
+    /* Set other styles as needed */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+box-sizing: border-box;
+user-select: none;
+}
+
+button:active{
+background: white;
+color: black;
+box-shadow:0 0 50px white;
+border: 1px solid black;
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(51, 30, 30); /* Change this to your desired color */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(237, 245, 222);
+  border-radius: 10px;
+} 
+button {
+color: rgb(26, 22, 22);
+height: 100%;
+border-radius: 8px;
+font-size: 20px;
+
+background-color: #b5c3cc;
+text-shadow: 0 1px 0 rgba(108, 12, 12, 0.1);
+box-shadow: rgba(2, 4, 3, 0.2) 0px 2px 3px, rgba(2, 4, 3, 0.2) 0px 1.5px 2px,
+rgba(96, 87, 87, 0.1) 0px 0px 0px 1px inset;
+}
+
+body{
+  width: 95%;
+}
+.lol{
+max-width: 500px;
+margin: 5px;
+padding: 15px;
+}
+input{
+font-size: 100%;
+}
+
+button:hover {
+    background-color: rgb(139, 177, 191);
+    text-shadow: 0 0 7px rgb(253, 251, 251);
+}
+
+.lol:hover{
+background-color: rgb(223, 32, 32);
+text-shadow: 0 0 7px rgb(253, 251, 251) ;
+}
+
+img{
+  z-index: 30;
+  width: 100px;
+  height: 100px;
+}
+img:hover{
+  transform: scale(3);
+  transition: transform 2s;
+}
+.copy{
+width:80px;
+position: absolute;
+height: 50px;
+float: right;
+transition: transform 0.3s ease-in-out;
+}
+.copy:hover {
+    transform: scale(1.1);
+}
+/* Add this CSS code to your existing styles */
+#topRightButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(56, 54, 54);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 50px;
+  width: 160px;
+}
+
+#topRightButton:hover {
+  background-color: rgb(165, 56, 56);
+  text-shadow: 0 0 7px rgb(253, 251, 251);
+}
+
+.textarea{
+  background-color: #F8F6F0;
+    margin-top:50px;
+    max-width:600px;
+    height:300px;
+    border:1px solid #F8F6F0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px rgb(189, 184, 184);
+  }
+  .get{
+    height:30px;
+    width:80%;
+  }
+  .textplace{
+    overflow: auto;
+    height: 200px;
+    border: 1px solid #F8F6F0;
+    width: 100%;
+  }
+  h5 {
+    color: #050505;
+    margin-bottom: 35px;
+}
+
+</style>
+
+<body background="C:\Users\DELL\OneDrive\Desktop\try\new express\wp10455999.jpg">
+<!-- Add this button to the body of your HTML -->
+<button id="topRightButton" style="background-color: #163d56;">Ask me</button>
+<div id="chatbotContainer" style="display: none; width: 30%;position:fixed;z-index: 999;right: 0px;">
+  <button class="close-btn" onclick="closeChatbot()" style="margin-top: 30px;">Close</button>
+  <iframe src='https://webchat.botframework.com/embed/food-project-bot?s=4d1EvmMPNH0.Zs1aqgpZV6aqTiJYNVHuWgvv7pHVHXGULYA4CseL1l8'  style='min-width: 300px; width: 100%; min-height: 500px;'></iframe>
+  </div>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var chatIcon = document.getElementById('topRightButton');
+          var chatbotContainer = document.getElementById('chatbotContainer');
+  
+          chatIcon.addEventListener('click', function() {
+              // Toggle iframe visibility
+              chatbotContainer.style.display = (chatbotContainer.style.display === 'none') ? 'block' : 'none';
+          });
+      });
+      
+  </script>
+  <script>
+      function closeChatbot() {
+          document.getElementById('chatbotContainer').style.display = 'none';
+      }
+  </script>
+<!-- //----------------------------------------------------------------------------------------------------------// -->
+<h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #163d56; margin-bottom: 10px;">Textminds</h1>
+<h5 style="margin-bottom: 35px;">Intelligent text extraction and summarisation...</h5>
+  <div style="z-index: 0;" id="cal" >
+    <div class="calculator" style="margin-bottom: -10;">
+      <button id="pdf" class="lol" style="background-color: #F8F6F0;color: black; width: 400PX; ">
+        Upload PDF
+        <input type="file" accept=".pdf" id="pdfInput" >
+      </button>
+      <button id="img" class="lol" style="background-color:#F8F6F0;color: black;width: 400PX;">
+        Upload Image
+        <input type="file" accept=".jpg" id="fileInput">
+      </button>
+    </div>
+  </div>
+
+<div class="container text-center">
+  <div class="row" style="margin-top: 0px;">
+    <div class="col">
+      <div class="textarea">
+        <button class="get" id="getPdf" style="color: #161212;">Get Pdf text</button>
+        <div style="width: 500px;" id="resultgetPdf" class="textplace"></div>
+        <button onclick="copyText(1)" class="copy" id="pdf" style="height: 60px;">
+          Copy Text
+        </button>
+      <div id="result"></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="textarea">
+        <button class="get" id="GetIMg">Get img text</button>
+        <div id="resultgetimg" style="width: 500px;" class="textplace"></div>
+        <button onclick="copyText(2)" class="copy" id="img" style="height: 60px;">
+          Copy Text
+        </button>
+        <button id="loading" style="display:none; height:50px;">Text Loading.....</button>
+      </div>
+       
+    </div>
+  </div>
+  <div class="row" style="margin-top: 50px;">
+    <div class="col">
+  <div class="textarea">
+    <form id="summarizeForm">
+        <textarea id="text" name="text" rows="10" style="display:none;" cols="30"></textarea>
+          <button type="button"  id="summarizePdf" class="get" style="width:350px;"  onclick="summarizeText()">Get Pdf text summry</button>
+      </form>
+      <div class="textplace" style="width: 500px;" id="summaryResult"></div>
+      <button onclick="copyText(3)" class="copy" style="height: 60px;">
+        Copy Text
+      </button>
+  </div>
+    </div>
+    <div class="col">
+      <div class="textarea">
+        <form id="summarizeForm">
+            <textarea id="textimg" name="textimg" rows="10" style="display:none;" cols="30"></textarea>
+              <button type="button" class="get" style="width:350px;"  id="summarizeImage"  onclick="summarizeTextImg()">Get img text sumary</button>
+          </form>
+          <div  class="textplace" id="summaryResultimg" style="width: 500px;"></div>
+          <button onclick="copyText(4)" class="copy" style="height: 60px;">
+            Copy Text
+          </button>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 40px;">
+        <button onclick="redirectToHistory()">Show History</button>
+        <script>
+          function redirectToHistory() {
+      window.location.href = `${window.location.href}history`;
+    }
+        </script>
+      </div>
+  </div>
+</div>
+
+ <!-- /*****------------------------------------------------------------------------------------------------ -->
+
+<script>
+  document.getElementById('summarizeImage').addEventListener('click', function () {
+    setTimeout(() => {
+      summarizeImage();
+    }, 2000);
+  });
+
+  document.getElementById('summarizePdf').addEventListener('click', function () {
+    setTimeout(() => {
+      summarizePdf();
+    }, 2000);
+  });
+  
+  
+
+  function summarizeImage() {
+  const textimg = document.getElementById('textimg').value;
+  const summaryResultimg = document.getElementById('summaryResultimg').innerText;
+
+  const fileInput = document.getElementById('fileInput');
+  const file = fileInput.files[0];
+
+  const formData = new FormData();
+  formData.append('textimg', textimg);
+  formData.append('summaryResultimg', summaryResultimg);
+  formData.append('fileInput', file);
+
+  fetch('http://localhost:3000/summarizeImage', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok (${response.status} ${response.statusText})`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Image data stored:', data.message);
+      alert('Image data stored successfully');
+    })
+    .catch(error => {
+      console.error('Fetch error:', error);
+    });
+}
+
+function summarizePdf() {
+  const text = document.getElementById('text').value;
+  const summaryResult = document.getElementById('summaryResult').innerText;
+
+  const formData = new FormData();
+  formData.append('text', text);
+  formData.append('summaryResult', summaryResult);
+
+  fetch('http://localhost:3000/summarizePdf', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Network response was not ok (${response.status} ${response.statusText})`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('PDF data stored:', data.message);
+      alert('PDF data stored successfully');
+    })
+    .catch(error => {
+      console.error('Fetch error:', error);
+    });
+}
+
+
+
+  function summarizeText() {
+      const text = document.getElementById('text').value;
+     
+        fetch('http://localhost:3000/summarize', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Network response was not ok (${response.status} ${response.statusText})`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Summary:', data.summary);
+            document.getElementById('summaryResult').innerText = data.summary;
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+        });
+    }
+  
+    function summarizeTextImg() {
+      const text = document.getElementById('textimg').value;
+     
+        fetch('http://localhost:3000/summarize', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text }),
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Network response was not ok (${response.status} ${response.statusText})`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Summary:', data.summary);
+            document.getElementById('summaryResultimg').innerText = data.summary;
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+        });
+    }
+
+
+</script>
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function (e) {
+      console.log('working...');
+      document.getElementById('loading').style.display = 'block';
+      
+      const file = e.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        const imgBase64 = event.target.result;
+        document.getElementById('resultgetimg').innerHTML = '<img src="' + imgBase64 + '" alt="Image uploaded">';
+        extractTextFromImage(imgBase64);
+      };
+      reader.readAsDataURL(file);
+    });
+    
+    async function extractTextFromImage(imgBase64) {
+      const result = await Tesseract.recognize(
+        imgBase64,
+        'eng',
+        { logger: m => console.log(m) }
+        );
+        
+        const resultDiv = document.getElementById('resultgetimg');
+        document.getElementById('loading').style.display = 'none';
+        
+        
+        resultDiv.innerHTML +=result.data.text 
+        document.getElementById('textimg').innerHTML =result.data.text
+
+        console.log('working...');
+        console.log(result.data.text);
+    }
+</script>
+<script>
+
+   document.getElementById('getPdf').addEventListener('click', function () {
+    console.log('working...');
+
+  var fileInput = document.getElementById('pdfInput');
+
+  var file = fileInput.files[0];
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var arrayBuffer = e.target.result;
+
+        // Using PDF.js to extract text from PDF
+        pdfjsLib.getDocument({ data: arrayBuffer }).promise.then(function (pdfDoc) {
+          var numPages = pdfDoc.numPages;
+          var text = '';
+
+          function extractText(pageNum) {
+            return pdfDoc.getPage(pageNum).then(function (page) {
+              return page.getTextContent().then(function (textContent) {
+                return textContent.items.map(function (s) { return s.str; }).join(' ');
+              });
+            });
+          }
+
+          // Extract text from all pages
+          var promises = [];
+          for (var i = 1; i <= numPages; i++) {
+            promises.push(extractText(i));
+          }
+
+          Promise.all(promises).then(function (results) {
+            text = results.join(' ');
+            document.getElementById('resultgetPdf').innerHTML = text;
+            document.getElementById('text').innerHTML = text;
+           
+          });
+        });
+      };
+      reader.readAsArrayBuffer(file);
+    } 
+   
+  });
+ 
+
+  function copyText(x) {
+    var textToCopy;
+    if(x==1){
+      textToCopy = document.getElementById('resultgetPdf').innerText;
+    }
+    else if(x==2){
+      textToCopy = document.getElementById('resultgetimg').innerText;
+    }
+    else if(x==3){
+      textToCopy = document.getElementById('summaryResult').innerText;
+    }
+    else if(x==4){
+      textToCopy = document.getElementById('summaryResultimg').innerText;
+    }
+   
+// Create a temporary textarea element to copy the text
+var tempTextArea = document.createElement('textarea');
+tempTextArea.value = textToCopy;
+document.body.appendChild(tempTextArea);
+
+// Select and copy the text
+tempTextArea.select();
+document.execCommand('copy');
+
+// Remove the temporary textarea
+document.body.removeChild(tempTextArea);
+alert('Textarea copied successfully')
+
+}
+
+</script>
+
+ <!-- /*****------------------------------------------------------------------------------------------------ -->
+
+</body>
+
+
+</html>
