@@ -49,7 +49,7 @@ Azure AI Service <br>
 <h2>Screenshots</h2>
 <h3>Azure App Service</h3>
 <b>Description :</b><p align="justify">Azure App Service provides a scalable and reliable hosting environment for the Multilingual Content Hub. It ensures seamless deployment and high availability, facilitating an optimal user experience.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-service.png" alt="azure-app-service"></img><br>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/app%20services.png" alt="azure-app-service"></img><br>
 <h3>Azure Databse for Cosmos DB</h3>
 <b>Description :</b><p align="justify"> This comprehensive project documentation outlines the process and methodologies involved in migrating a MongoDB database to Azure Cosmos DB within the Azure cloud ecosystem. The seamless transition from a traditional MongoDB setup to a globally distributed, multi-model database service like Azure Cosmos DB marks a strategic move towards scalability, global reach, and enhanced performance.</p>
 <img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/database.png" alt="azure-mysql-db-service"></img><br>
@@ -60,7 +60,7 @@ Azure AI Service <br>
 <img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-ai.png" alt="azure-translator-ai-service"></img><br>
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/final-project.png" alt="final-project-demo"></img>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/working-image.png" alt="final-project-demo"></img>
 
 <h3>Resource Visualizer</h3>
 <img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/flask-ai.jpg" alt="resource-display"></img>
