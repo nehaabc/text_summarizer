@@ -52,7 +52,7 @@ Azure AI Service <br>
 <img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-service.png" alt="azure-app-service"></img><br>
 <h3>Azure Databse for Cosmos DB</h3>
 <b>Description :</b><p align="justify"> This comprehensive project documentation outlines the process and methodologies involved in migrating a MongoDB database to Azure Cosmos DB within the Azure cloud ecosystem. The seamless transition from a traditional MongoDB setup to a globally distributed, multi-model database service like Azure Cosmos DB marks a strategic move towards scalability, global reach, and enhanced performance.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-db.png" alt="azure-mysql-db-service"></img><br>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/database.png" alt="azure-mysql-db-service"></img><br>
 <h3>Azure AI Translator Service</h3>
 <b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p><br>
 <h3>Azure AI Language and Chat Bot Service: </h3>
