@@ -57,7 +57,7 @@ Azure AI Service <br>
 <b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p><br>
 <h3>Azure AI Language and Chat Bot Service: </h3>
 <p>: Implemented to develop an interactive chatbot, enabling users to interact with the system using natural language and enhancing the overall user experience.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-ai.png" alt="azure-translator-ai-service"></img><br>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/bot%20services.png" alt="azure-translator-ai-service"></img><br>
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
 <img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/working-image.png" alt="final-project-demo"></img>
