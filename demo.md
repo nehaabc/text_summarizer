@@ -57,18 +57,18 @@ In future updates, Textminds could enhance its capabilities by introducing multi
 <h3>Azure App Service</h3>
 <b>Description :</b><p align="justify">Azure App Service provides a scalable and reliable hosting environment for the Textminds - Text Extractor, Conversion, and Summarizer. It ensures seamless deployment and high availability, facilitating an optimal user experience.</p>
 <img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/app%20services.png" alt="azure-app-service"></img><br>
-<h3>Azure Databse for MySQL</h3>
-<b>Description :</b><p align="justify"> The project leverages Azure Database for MySQL to efficiently manage and store user interaction history. This relational database service ensures data consistency and supports quick retrieval of information.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-db.png" alt="azure-mysql-db-service"></img><br>
+<h3>Azure Databse for Cosmos DB</h3>
+<b>Description :</b><p align="justify"> This comprehensive project documentation outlines the process and methodologies involved in migrating a MongoDB database to Azure Cosmos DB within the Azure cloud ecosystem. The seamless transition from a traditional MongoDB setup to a globally distributed, multi-model database service like Azure Cosmos DB marks a strategic move towards scalability, global reach, and enhanced performance.</p>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/database.png"></img><br>
 <h3>Azure AI Translator Service</h3>
-<b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-ai.png" alt="azure-translator-ai-service"></img><br>
+<b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Textminds - Text Extractor, Conversion, and Summarizer's text summarization and conversion capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant conversions.</p>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/bot%20services.png" alt="azure-translator-ai-service"></img><br>
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/final-project.png" alt="final-project-demo"></img>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/working-image.png"></img>
 
 <h3>Resource Visualizer</h3>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/flask-ai.jpg" alt="resource-display"></img>
+<img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/resource-vizualizer.png"></img>
 
 <h2>Final Project Statement</h2>
 <p align="justify">
