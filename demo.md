@@ -1,33 +1,42 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
-<h2>Project Title:</h2><b><a href="https://aiwebappazure.azurewebsites.net/">Multilingual Content Hub - VOX Translation Web App using Azure AI Translation Service.</b></a>
+<h2>Project Title:</h2><b><a href="https://github.com/nehaabc/text_summarizer">Textminds - Text Extractor, Conversion, and Summarizer</b></a>
 <br>
 <h2>Project Details</h2>
-<b>Project Demo URL :</b> https://aiwebappazure.azurewebsites.net/ <br>
+<b>Project Demo URL :</b> https://github.com/nehaabc/text_summarizer <br>
 <b>Demo Video URL :</b> https://drive.google.com/file/d/1bLptg01EM3NtTRZY6j6X_FCmrwf_2TN9/view <br>
-<b>Github Repository URL :</b> https://github.com/AnkeetaGupta/flask-ai-translation.git <br>
+<b>Github Repository URL :</b> https://github.com/nehaabc/text_summarizer.git <br>
 <b>Industry :</b> Lifestyle and Technology<br>
 <h2>Azure Services Used</h2>
 <h3>
 Core Azure Services : <br>
 1. Azure App Service <br>
-2. Azure SQL Database <br> <br>
+2. Azure Databse for Cosmos DB <br> <br>
 Azure AI Service <br>
-1. Azure AI Translator Service
+1. Azure AI Document Summarization
+2. Azure AI Language and Chat Bot Service
 </h3>
 <h2>Problem Statement</h2>
-<p align="justify">In our increasingly more interconnected global, the need for seamless verbal exchange throughout language boundaries is extra important than ever. The assignment lies in offering a consumer-friendly platform wherein people can without difficulty translate content while maintaining a report in their interactions. The possibility is to create an green, scalable solution that addresses language translation desires and complements consumer revel in with the aid of incorporating recent search records.</p>
+<p align="justify">In today's digital age, the proliferation of textual information presents a significant challenge for users seeking to extract relevant insights efficiently. The sheer volume and diversity of textual data available across various sources can overwhelm users, hindering productivity and decision-making. Moreover, the need to distil complex information into concise summaries further complicates the process, requiring advanced tools and technologies to facilitate comprehension and analysis. Textminds addresses these challenges by offering a comprehensive solution for text extraction, conversion, summarization, and interactive user engagement, thereby empowering users to navigate and leverage textual data effectively.</p>
 <h2>Project Description</h2>
-<p align="justify">The "Multilingual Content Hub - VOX" is a web application designed to facilitate language translation and maintain a history of person interactions. Users can enter text, and the gadget leverages Azure AI Translator service to provide accurate and contextually relevant translations. The software additionally consists of a characteristic to show recent searches, allowing users to revisit and reuse previous translations easily.</p><br>
+<p align="justify">The "Textminds streamlines the process of handling textual data through its intuitive and feature-rich platform. The text extraction module enables users to seamlessly retrieve content from web pages, documents, and custom input, leveraging robust parsing algorithms to capture textual information accurately. Once extracted, users can leverage the conversion module to transform text into various formats, catering to different use cases and preferences. However, the true innovation lies in Textminds' summarization feature, which harnesses the power of Azure AI Document Summarization to distil lengthy documents into concise summaries. By identifying key themes, insights, and information, Textminds empowers users to grasp the essence of complex texts swiftly, facilitating informed decision-making and analysis.
+
+Furthermore, Textminds enhances user interaction and accessibility through its integrated chatbot interface. Powered by Azure AI Language and Chat Bot Service, the chatbot enables natural language understanding, allowing users to communicate with the system intuitively. Whether seeking assistance, requesting summaries, or exploring functionalities, users can engage with Textminds effortlessly, fostering a seamless and enriching user experience.
+</p><br>
 <b>Key Features :</b>
 <ul>
-    <li>Seamless Language Translation</li>
-    <li>User-Friendly Interface</li>
-    <li>History Tracking and Recent Searches</li>
-    <li>Azure App Service Hosting</li>
-    <li>Azure SQL Database for Efficient Data Management</li>
+    <li>Text extraction from various sources.</li>
+    <li>Conversion to multiple formats.</li>
+    <li>Advanced document summarization.</li>
+    <li>Interactive chatbot interface.</li>
+    <li>Scalable hosting on Azure App Service.</li>
+    <li>Global NoSQL database with Azure Cosmos DB.</li>
+    <li>Natural language interaction with Azure AI.</li>
+    <li>Integration with Azure services for optimization.</li>
+    <li>Agile development with Azure DevOps.</li>
 </ul>
 <b>Future Enhancements :</b><br>
-<p align="justify">The Multilingual Content Hub isn't only a standalone venture but a foundation for ability future enhancements. Integrations with additional Azure offerings, which includes Azure Storage for coping with multimedia content and Azure Key Vault for more suitable security, could be explored. Moreover, monitoring and analytics via Azure Monitor and Azure Application Insights pave the manner for continuous improvement and optimization.</p>
+<p align="justify">
+In future updates, Textminds could enhance its capabilities by introducing multilingual support and customizable summarization settings. Integration with external APIs for additional text analysis, along with advanced chatbot features like context awareness, could improve user assistance. Collaborative summarization tools and machine learning-based models tailored to specific domains could enhance summary quality. Real-time collaboration, mobile app development, and improved security features would further elevate Textminds' utility and user experience.</p>
 <h2>Core Azure Services</h2>
 <b>Azure App Service :</b><br><p align="justify"><br>The project utilizes Azure App Service to host the web application, ensuring scalability, reliability, and ease of deployment. This service enables seamless integration with other Azure components and provides a secure environment for the application.</p>
 
