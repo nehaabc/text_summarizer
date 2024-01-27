@@ -1,16 +1,16 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project </h1>
-<h2>Project Title:</h2><b><a href="https://aiwebappazure.azurewebsites.net/">TEXTMINDS Translation Web App using Azure AI Translation Service.</b></a>
+<h2>Project Title:</h2><b><a href="https://textextractorsummrizer.azurewebsites.net/">TEXTMINDS Translation Web App using Azure AI Translation Service.</b></a>
 <br>
 <h2>Project Details</h2>
-<b>Project Demo URL :</b> https://aiwebappazure.azurewebsites.net/ <br>
-<b>Demo Video URL :</b> https://drive.google.com/file/d/1bLptg01EM3NtTRZY6j6X_FCmrwf_2TN9/view <br>
-<b>Github Repository URL :</b> https://github.com/AnkeetaGupta/flask-ai-translation.git <br>
+<b>Project Demo URL :</b> https://textextractorsummrizer.azurewebsites.net/ <br>
+<b>Demo Video URL :</b>  <br>
+<b>Github Repository URL :</b> https://github.com/nehaabc/text_summarizer.git <br>
 <b>Industry :</b> Lifestyle and Technology<br>
 <h2>Azure Services Used</h2>
 <h3>
 Core Azure Services : <br>
 1. Azure App Service <br>
-2. Azure SQL Database <br> <br>
+2. Azure Databse for Cosmos DB <br> <br>
 Azure AI Service <br>
 1.Azure AI Document Summarization: <br>
 2.Azure AI Language and Chat Bot Service:     
@@ -31,9 +31,8 @@ Azure AI Service <br>
 <b>Future Enhancements :</b><br>
 <p align="justify">In addition to the core and AI services, the project may leverage other Azure technologies for optimization and additional functionalities. For instance, Azure Cognitive Services can enhance the understanding of natural language, while Azure DevOps may be employed for continuous integration and deployment, ensuring a smooth development workflow. Privacy features will be enhanced to comply with regulations, and an offline mode will be developed for scenarios with limited connectivity</p>
 
-<b>Azure MySQL Dtatabase :</b><br><p align="justify">To store and manage recent search history, the project employs Azure SQL Database. This relational database service ensures data consistency, integrity, and enables efficient querying, making it ideal for tracking and displaying user interactions.</p>
 <h2>Azure AI Service</h2>
-<b>1.Azure AI Document Summarization :</b><br><br><p align="justify">Integrated for advanced text summarization, enhancing the project's ability to generate concise and meaningful summaries.</p>
+<b>1.Azure AI Document Summarization :</b><br><p align="justify">Integrated for advanced text summarization, enhancing the project's ability to generate concise and meaningful summaries.</p>
 <b>2.Azure AI Language and Chat Bot Service: </b><br>
 <p align="justify"> Implemented to develop an interactive chatbot, enabling users to interact with the system using natural language and enhancing the overall user experience.</p>
 
@@ -62,8 +61,6 @@ Azure AI Service <br>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
 <img src="https://github.com/nehaabc/text_summarizer/blob/main/screenshots/working-image.png" alt="final-project-demo"></img>
 
-<h3>Resource Visualizer</h3>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/flask-ai.jpg" alt="resource-display"></img>
 
 <h2>Final Project Statement</h2>
 <p align="justify">Textminds is a Future Ready Talent Internship project that showcases the integration of Node.js, HTML, and CSS with Azure Cloud services. By utilizing Azure App Service, Azure Cosmos DB for MongoDB, and Azure AI Services, the project delivers an end-to-end solution for text extraction, conversion, summarization, and interactive user engagement through a chatbot. 
@@ -71,4 +68,4 @@ Azure AI Service <br>
 <p align="justify">
 <b>This innovative approach addresses the challenges associated with handling vast amounts of textual information, providing users with a powerful and user-friendly platform for efficient text processing.</b>
 </p> <br>
-</h2><b><a href="https://aiwebappazure.azurewebsites.net/">Multilingual Content Hub - VOX Translation Web App using Azure AI Translation Service</b></a>
+</h2><b><a href="https://textextractorsummrizer.azurewebsites.net/">TEXTMINDS Translation Web App using Azure AI Translation Service.</b></a>
